@@ -105,7 +105,6 @@ var good_da_host_JSON = { "apple.com": null,
 "icloud.com": null,
 "apple-dns.net": null,
 "swcdn.apple.com": null,
-"ocsp.apple.com":, null,
 "init.itunes.apple.com": null,
 "init-cdn.itunes-apple.com.akadns.net": null,
 "itunes.apple.com.edgekey.net": null,
@@ -191,10 +190,11 @@ var good_da_hostpath_regex_flag = 0 > 0 ? true : false;  // test for non-zero nu
 var good_da_RegExp = /^$/;
 var good_da_regex_flag = 0 > 0 ? true : false;  // test for non-zero number of rules
 
-// 39 rules:
+// 39 rules (40 rules - added ocsp.apple.com):
 var good_da_host_exceptions_JSON = { "iad.apple.com": null,
 "iadsdk.apple.com": null,
 "iadsdk.apple.com.edgekey.net": null,
+"ocsp.apple.com": null,
 "bingads.microsoft.com": null,
 "azure.bingads.trafficmanager.net": null,
 "choice.microsoft.com": null,
