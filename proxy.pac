@@ -37,8 +37,8 @@ function FindProxyForURL(url, host)
 
 // Define the blackhole proxy for blocked adware and trackware
 
-var normal = "DIRECT";
-var proxy = "DIRECT";                  // e.g. 127.0.0.1:3128
+var normal = "SOCKS 10.8.0.1:1080";
+var proxy = "SOCKS 10.8.0.1:1080";                  // e.g. 127.0.0.1:3128
 // var blackhole_ip_port = "127.0.0.1:8119";  // ngnix-hosted blackhole
 // var blackhole_ip_port = "8.8.8.8:53";      // GOOG DNS blackhole; do not use: no longer works with iOS 11—causes long waits on some sites
 var blackhole_ip_port = "127.0.0.1:8119";    // on iOS a working blackhole requires return code 200;
@@ -3968,7 +3968,7 @@ if (
    dnsDomainIs(host, ".local") ||
    (url.substring(0,4) == "ftp:")
 )
-        return "DIRECT";
+        return "SOCKS 10.8.0.1:1080";
 else
         return EasyListFindProxyForURL(url, host);
 }   
