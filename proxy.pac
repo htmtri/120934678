@@ -1,10 +1,3 @@
-//SOCKS5 Proxy MULLVAD PROXY SETUP
-
-function FindProxyForURL(url, host)
-{ 
-     return "SOCKS 10.8.0.1:1080";
-}
-
 // PAC (Proxy Auto Configuration) Filter from EasyList rules
 // 
 // Copyright (C) 2017 by Steven T. Smith <steve dot t dot smith at gmail dot com>, GPL
