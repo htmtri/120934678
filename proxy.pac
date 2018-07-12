@@ -1,4 +1,4 @@
-// PAC (Proxy Auto Configuration) Filter from EasyList rules
+// PAC (Proxy Auto Configuration) Filter from EasyList rules with Mullvad SOCKS
 // 
 // Copyright (C) 2017 by Steven T. Smith <steve dot t dot smith at gmail dot com>, GPL
 // https://github.com/essandess/easylist-pac-privoxy/
